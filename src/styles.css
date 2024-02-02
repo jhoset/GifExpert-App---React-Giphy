@@ -90,10 +90,10 @@ h3 {
   margin-bottom: 20px;
   margin-right: 20px;
   overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
 
 .card:hover {
-  transition: 0.3s ease-in-out;
   transform: scale(1.04);
 }
 
