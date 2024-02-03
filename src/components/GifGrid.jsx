@@ -8,7 +8,7 @@ export const GifGrid = ({ category, id, onRemoveCategory }) => {
 
     return (
         <>
-            <div className='result-header'>
+            <div className='result-header' aria-label='category-result'>
                 {!isLoading && (<h2> Result for: <i>{category}</i> </h2>)}
                 {
                     isLoading && (<h2> Loading...</h2>)
@@ -28,7 +28,7 @@ export const GifGrid = ({ category, id, onRemoveCategory }) => {
 
 }
 GifGrid.propTypes = {
-    category: PropTypes.string,
-    id: PropTypes.number,
-    onRemoveCategory: PropTypes.func
+    category: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    onRemoveCategory: PropTypes.func.isRequired
 }

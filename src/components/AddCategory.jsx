@@ -11,6 +11,7 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
     const onSubmit = (event) => {
+        // console.log('handling onSubmit event...');
         event.preventDefault();
         if (!inputValue.trim().length) return;
         // setCategories((currentCategories) => {
@@ -23,7 +24,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} aria-label="form">
             <input type="search"
                 value={inputValue}
                 onChange={onInputChange}

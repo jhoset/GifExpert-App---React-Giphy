@@ -6,9 +6,7 @@ let nextId = 0;
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState([
-        { id: nextId++, name: 'Programming' }
-    ]);
+    const [categories, setCategories] = useState([ ]);
 
     const onAddCategory = (newCat) => {
         let existingCat = categories.find(cat => cat.name == newCat);
